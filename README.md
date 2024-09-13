@@ -47,6 +47,11 @@
     ```
 
 ```markdown
+## Contato
+
+-   Email: [lauro.silva@1clickmkt.com.br](mailto:lauro.silva@1clickmkt.com.br)
+-   LinkedIn: [Lauro Gomes](https://www.linkedin.com/in/lauro-gomes-537273b1/)
+
 ## Sobre o Projeto baseLoginLaravel
 
 baseLoginLaravel é um sistema básico de autenticação desenvolvido em Laravel, criado para demonstrar a implementação de um sistema de login e registro de usuários. Este projeto faz parte do meu portfólio e serve como base para aplicações que necessitam de funcionalidades de autenticação seguras e eficientes.
