@@ -17,12 +17,21 @@
         @csrf
         @method('patch')
 
+        <!-- Primeiro Nome -->
         <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" name="name" type="text" class="mt-1 block w-full" :value="old('name', $user->name)" required autofocus autocomplete="name" />
-            <x-input-error class="mt-2" :messages="$errors->get('name')" />
+            <x-input-label for="first_name" :value="__('First Name')" />
+            <x-text-input id="first_name" name="first_name" type="text" class="mt-1 block w-full" :value="old('first_name', $user->first_name)" required autofocus autocomplete="given-name" />
+            <x-input-error class="mt-2" :messages="$errors->get('first_name')" />
         </div>
 
+        <!-- Sobrenome -->
+        <div>
+            <x-input-label for="last_name" :value="__('Last Name')" />
+            <x-text-input id="last_name" name="last_name" type="text" class="mt-1 block w-full" :value="old('last_name', $user->last_name)" required autocomplete="family-name" />
+            <x-input-error class="mt-2" :messages="$errors->get('last_name')" />
+        </div>
+
+        <!-- Email -->
         <div>
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input id="email" name="email" type="email" class="mt-1 block w-full" :value="old('email', $user->email)" required autocomplete="username" />
@@ -45,6 +54,13 @@
                     @endif
                 </div>
             @endif
+        </div>
+
+        <!-- WhatsApp -->
+        <div>
+            <x-input-label for="whatsapp" :value="__('WhatsApp')" />
+            <x-text-input id="whatsapp" name="whatsapp" type="text" class="mt-1 block w-full" :value="old('whatsapp', $user->whatsapp)" required autocomplete="tel" />
+            <x-input-error class="mt-2" :messages="$errors->get('whatsapp')" />
         </div>
 
         <div class="flex items-center gap-4">
