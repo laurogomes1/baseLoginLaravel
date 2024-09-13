@@ -39,14 +39,34 @@
     git clone https://github.com/laurogomes1/baseLoginLaravel.git
     ```
 
-````markdown
-2. **Adicione suas credenciais no arquivo .env:**
+2. **Adicione suas credenciais no arquivo `.env`:**
+
+    Configure as credenciais do seu banco de dados MySQL no arquivo `.env`.
+
+3. **Instale as dependências do Composer:**
 
     ```bash
-    Uso mysql, basta adicionar as credenciais do seu sistema.
+    composer install
     ```
 
-```markdown
+4. **Gere a chave da aplicação:**
+
+    ```bash
+    php artisan key:generate
+    ```
+
+5. **Execute as migrações:**
+
+    ```bash
+    php artisan migrate
+    ```
+
+6. **Inicie o servidor de desenvolvimento:**
+
+    ```bash
+    php artisan serve
+    ```
+
 ## Contato
 
 -   Email: [lauro.silva@1clickmkt.com.br](mailto:lauro.silva@1clickmkt.com.br)
@@ -54,6 +74,8 @@
 
 ## Sobre o Projeto baseLoginLaravel
 
-baseLoginLaravel é um sistema básico de autenticação desenvolvido em Laravel, criado para demonstrar a implementação de um sistema de login e registro de usuários. Este projeto faz parte do meu portfólio e serve como base para aplicações que necessitam de funcionalidades de autenticação seguras e eficientes.
-```
-````
+**baseLoginLaravel** é um sistema básico de autenticação desenvolvido em Laravel, criado para demonstrar a implementação de um sistema de login e registro de usuários. Este projeto faz parte do meu portfólio e serve como base para aplicações que necessitam de funcionalidades de autenticação seguras e eficientes.
+
+## Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
